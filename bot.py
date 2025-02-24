@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os
 
 # 봇 설정
 intents = discord.Intents.default()
@@ -79,5 +80,6 @@ async def show_commands(ctx):
     
     await ctx.send(embed=embed)
 
+eccess_token = os.environ["BOT_TOKEN"]
 # 실행
-bot.run("MTM0MzIyNjIzNzAxNTAzMTgyMQ.Ge8qmn.8kaAXnw4sgRSrDqbIg54Pu09IsdVAxNqjn-sss")
+bot.run(eccess_token)
